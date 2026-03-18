@@ -1,118 +1,95 @@
-Email Validation System (C++)
+# Email Validation System (C++)
 
+![Language](https://img.shields.io/badge/Language-C++-blue)
+![Concepts](https://img.shields.io/badge/Concepts-String%20Handling-green)
+![Concepts](https://img.shields.io/badge/Concepts-Functions-green)
+![Platform](https://img.shields.io/badge/Platform-Console-orange)
 
+---
 
+## Overview
 
+Email validation is an important process used in many real-world applications such as login systems, registration forms, and contact forms.
 
+This project implements a **simple Email Validation System using C++** that checks whether an email address follows basic formatting rules.
 
+The program analyzes the structure of an email string and determines whether it is **valid or invalid** based on predefined validation rules.
 
+---
 
-Overview
+## Objectives
 
-Email validation is an important feature used in many real-world applications such as login systems, registration forms, and contact forms.
+* Implement a basic email validation system
+* Practice string manipulation in C++
+* Understand modular programming using functions
+* Apply conditional logic and loops
+* Build a console-based interactive program
 
-This project implements a simple Email Validation System using C++ that checks whether an email address follows basic formatting rules.
+---
 
-The program analyzes the structure of an email string and determines whether it is valid or invalid based on predefined validation rules.
+## Technologies Used
 
-Objectives
+**Language**
 
-Implement a basic email validation system
+C++
 
-Practice string manipulation in C++
+**Libraries**
 
-Understand modular programming using functions
+```
+#include <iostream>
+#include <string>
+#include <cctype>
+```
 
-Apply conditional logic and loops
+**Concepts Applied**
 
-Build a console-based interactive program
+* Functions
+* Boolean Logic
+* String Handling
+* Loops
+* Conditional Statements
+* Input Validation
 
-System Workflow
+---
 
-The user enters an email address.
+## Validation Rules
 
-The program scans the email string.
+The program validates email addresses using the following rules:
 
-It checks for the presence and correct position of:
+* Email must contain **exactly one @ symbol**
+* @ cannot be the **first or last character**
+* A **dot (.) must appear after the @ symbol**
+* Domain extension must contain **at least two characters**
+* Username can contain:
 
-@ symbol
+  * letters
+  * numbers
+  * .
+  * _
+  * *
+* Domain can contain:
 
-. symbol in the domain
+  * letters
+  * numbers
+  * .
+  * *
 
-It validates characters in the:
+---
 
-username section
+## Program Structure
 
-domain section
-
-If all rules are satisfied, the email is marked VALID.
-
-Otherwise, the email is marked INVALID.
-
-Validation Rules
-
-The program validates emails using the following rules:
-
-Email must contain exactly one @ symbol
-
-@ cannot be the first or last character
-
-Domain must contain . after @
-
-Domain extension must contain at least 2 characters
-
-Username can include:
-
-letters
-
-numbers
-
-.
-
-_
-
--
-
-Domain can include:
-
-letters
-
-numbers
-
-.
-
--
-
-Technologies Used
-
-Language: C++
-
-Libraries:
-
-<iostream>
-<string>
-<cctype>
-
-Concepts Applied:
-
-Functions
-
-Boolean Logic
-
-String Handling
-
-Loops
-
-Conditional Statements
-
-Input Validation
-
-Program Structure
+```
 Email-validation-system
 │
 ├── rules.cpp
 └── README.md
-Example Output
+```
+
+---
+
+## Example Output
+
+```
 =========================================
 EMAIL VALIDATION PROGRAM
 =========================================
@@ -128,12 +105,23 @@ Status: VALID
 Username: aditya
 Domain: gmail.com
 ========================================
-Compilation and Execution
+```
+
+---
+
+## Compilation and Execution
 
 Compile the program:
 
+```
 g++ rules.cpp -o validator
+```
 
 Run the program:
 
+```
 ./validator
+```
+
+---
+
